@@ -1,0 +1,98 @@
+/* --- MOCKUP STYLES --- */
+.mockupLinkCard {
+  color: var(--white);
+  font: var(--tp-4);
+  border-radius: 0.8rem;
+  padding: 1.6rem;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.mockupLinkContent {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.mockupLinkIcon,
+.mockupArrowIcon {
+  filter: brightness(0) invert(1);
+  width: 1.6rem;
+  height: 1.6rem;
+}
+
+/* --- PREVIEW STYLES --- */
+.previewLinkCard {
+  width: 100%;
+  padding: 1.6rem;
+  border-radius: 0.8rem;
+  color: var(--white);
+  transition: transform 0.2s ease;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.previewLinkCard:hover {
+  transform: translateY(-0.2rem);
+}
+
+.previewLinkContent {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.previewLinkTitle {
+  font: var(--tp-3r);
+}
+
+.previewLinkIcon {
+  width: 2rem;
+  height: 2rem;
+  filter: brightness(0) invert(1);
+}
+
+.previewArrowIcon {
+  filter: brightness(0) invert(1);
+}
+
+/* --- BG CARDS --- */
+.bgGithub {
+  background-color: var(--grey-950);
+}
+
+.bgYoutube {
+  background-color: var(--red-550);
+}
+
+.bgLinkedin {
+  background-color: var(--blue-500);
+}
+
+.bgDevto {
+  background-color: var(--grey-900);
+}
+
+.bgCodewars {
+  background-color: var(--pink-900);
+}
+
+.bgFreeCodeCamp {
+  background-color: var(--purple-950);
+}
+
+.bgGitLab {
+  background-color: var(--orange-500);
+}
+
+.bgHashnode {
+  background-color: var(--blue-800);
+}
+
+.bgStackOverflow {
+  background-color: var(--orange-600);
+}

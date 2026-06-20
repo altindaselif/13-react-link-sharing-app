@@ -1,0 +1,129 @@
+.loginPageWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.mainContainer {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4.8rem;
+}
+
+.logoContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.logoImg {
+  height: 4rem;
+  width: auto;
+}
+
+.authCardContainer {
+  width: 47.6rem;
+  background-color: var(--white);
+  padding: 4rem;
+  border-radius: 1.2rem;
+}
+
+.authHeaderContainer {
+  margin-bottom: 4rem;
+}
+
+.authTitle {
+  font: var(--tp-1);
+  color: var(--grey-900);
+  margin-bottom: 0.8rem;
+}
+
+.authSubtitle {
+  font: var(--tp-3r);
+  color: var(--grey-500);
+}
+
+.authFormContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.passwordInstructionText {
+  font: var(--tp-4);
+  color: var(--grey-500);
+  margin-top: 0.8rem;
+}
+
+.submitButton {
+  background-color: var(--purple-600);
+  color: var(--white);
+  font: var(--tp-3sb);
+  padding: 1.6rem 0;
+  border-radius: 0.8rem;
+  width: 100%;
+  transition:
+    background-color 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.submitButton:hover {
+  background-color: var(--purple-300);
+  box-shadow: 0 1rem 2.4rem rgba(99, 60, 255, 0.25);
+}
+
+.authFooterContainer {
+  text-align: center;
+}
+
+.footerText {
+  font: var(--tp-3r);
+  color: var(--grey-500);
+}
+
+.footerLink {
+  font: var(--tp-3r);
+  color: var(--purple-600);
+  text-decoration: none;
+}
+
+.footerLink:hover {
+  color: var(--purple-300);
+}
+
+@media (max-width: 24em) {
+  .loginPageWrapper {
+    background-color: var(--white);
+    align-items: flex-start;
+    padding: 3.2rem;
+  }
+
+  .mainContainer {
+    gap: 6.4rem;
+  }
+
+  .logoContainer {
+    justify-content: flex-start;
+    width: 100%;
+  }
+
+  .authCardContainer {
+    width: 100%;
+    padding: 0;
+    border-radius: 0;
+  }
+
+  .authTitle {
+    font: var(--tp-2);
+  }
+
+  .footerText {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+}

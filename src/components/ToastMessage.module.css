@@ -1,0 +1,23 @@
+.toastMessageContainer {
+  position: fixed;
+  bottom: 4rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 10;
+
+  font: var(--tp-3sb);
+  color: var(--grey-50);
+  background-color: var(--grey-900);
+  box-shadow: 0 0.8rem 1.6rem rgba(0, 0, 0, 0.15);
+  padding: 1.6rem 2.4rem;
+  border-radius: 1.2rem;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.toastIcon {
+  width: 2rem;
+  height: 2rem;
+}

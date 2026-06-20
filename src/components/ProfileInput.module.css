@@ -1,0 +1,81 @@
+.profileInputRow {
+  display: flex;
+  align-items: center;
+}
+
+.profileInputRow:not(.hasError) .inputWrapper:focus-within {
+  border-color: var(--purple-600);
+  box-shadow: 0 0 3.2rem rgba(99, 60, 255, 0.25);
+}
+
+.profileInputRow.hasError .inputWrapper:focus-within {
+  border-color: var(--red-500);
+  box-shadow: none;
+}
+
+.profileInputRow.hasError .inputWrapper {
+  border-color: var(--red-500);
+}
+
+.profileInputRow.hasError .errorText {
+  display: block;
+}
+
+.inputLabel {
+  font: var(--tp-3r);
+  color: var(--grey-500);
+  flex: 0 0 24rem;
+}
+
+.inputWrapper {
+  flex: 1;
+  padding: 1.6rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--grey-200);
+  border-radius: 0.8rem;
+  transition:
+    border-color 0.2s ease,
+    box-shadow 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.inputField {
+  flex: 1;
+  font: var(--tp-3r);
+  color: var(--grey-900);
+  border: none;
+  outline: none;
+  background: transparent;
+}
+
+.errorText {
+  font: var(--tp-4);
+  color: var(--red-500);
+  display: none;
+}
+
+@media (max-width: 24em) {
+  .profileInputRow {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .profileInputRow.hasError {
+    position: relative;
+    padding-bottom: 2.1rem;
+  }
+
+  .profileInputRow.hasError .errorText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+
+  .inputLabel {
+    font: var(--tp-4);
+    flex: none;
+  }
+}

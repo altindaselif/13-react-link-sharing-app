@@ -1,0 +1,85 @@
+:root {
+  /* Colors */
+  --white: #fff;
+  --black: #000;
+
+  --grey-950: #1a1a1a;
+  --grey-900: #333333;
+  --grey-500: #737373;
+  --grey-200: #d9d9d9;
+  --grey-100: #eeeeee;
+  --grey-50: #fafafa;
+
+  --blue-800: #0330d1;
+  --blue-500: #2d68ff;
+
+  --purple-950: #302267;
+  --purple-600: #633cff;
+  --purple-300: #beadff;
+
+  --red-550: #ee3939;
+  --red-500: #ff3939;
+
+  --pink-900: #8a1a50;
+  --pink-400: #f4a28c;
+
+  --orange-600: #ec7100;
+  --orange-500: #eb4925;
+
+  /* Typography - Font Family */
+  --font-family: "Instrument Sans", sans-serif;
+
+  /* Text Presets */
+  /* Weight Size/Line-Height Family */
+  --tp-1: 700 3.2rem/1.5 var(--font-family);
+  --tp-2: 700 2.4rem/1.5 var(--font-family);
+  --tp-3b: 700 1.6rem/1.5 var(--font-family);
+  --tp-3sb: 600 1.6rem/1.5 var(--font-family);
+  --tp-3r: 400 1.6rem/1.5 var(--font-family);
+  --tp-4: 400 1.2rem/1.5 var(--font-family);
+
+  /* Spacing */
+  --spacing-800: 6.4rem;
+  --spacing-700: 5.6rem;
+  --spacing-600: 4.8rem;
+  --spacing-500: 4rem;
+  --spacing-400: 3.2rem;
+  --spacing-300: 2.4rem;
+  --spacing-200: 1.6rem;
+  --spacing-100: 0.8rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* font-size: 10px; */
+  /* 10px / 16px = 0.625 = 62.5% */
+  /* Percentage of user's browser font-size setting */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--font-family);
+  background-color: var(--grey-50);
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
+}

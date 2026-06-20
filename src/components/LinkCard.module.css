@@ -1,0 +1,200 @@
+.linkCardContainer {
+  background-color: var(--grey-50);
+  border-radius: 1.2rem;
+  padding: 2.4rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.linkCardHeaderContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.linkCardTitleContainer {
+  font: var(--tp-3b);
+  color: var(--grey-500);
+  cursor: grab;
+
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+}
+
+.removeButton {
+  font: var(--tp-3r);
+  color: var(--grey-500);
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.removeButton:hover {
+  color: var(--grey-900);
+  text-decoration: underline;
+}
+
+.linkCardBodyContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.inputGroupContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  position: relative;
+}
+
+.inputGroupContainer.isOpen {
+  z-index: 2;
+}
+
+.inputGroupContainer.isOpen .dropdownMenuContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.inputGroupContainer:not(.hasError) .inputContainer:focus-within {
+  border-color: var(--purple-600);
+  box-shadow: 0 0 3.2rem rgba(99, 60, 255, 0.25);
+}
+
+.inputGroupContainer.hasError .inputContainer {
+  border-color: var(--red-500);
+  box-shadow: none;
+}
+
+.inputGroupContainer.hasError .inputField {
+  color: var(--red-500);
+}
+
+.inputGroupContainer.hasError .errorText {
+  display: block;
+}
+
+.inputLabel {
+  font: var(--tp-4);
+  color: var(--grey-900);
+}
+
+.dropdownContainer {
+  padding: 1.6rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--grey-200);
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dropdownContainer:hover,
+.dropdownContainer.active {
+  border-color: var(--purple-600);
+  box-shadow: 0 0 3.2rem rgba(99, 60, 255, 0.25);
+}
+
+.dropdownContainer.active .dropdownOpenIcon {
+  transform: rotate(180deg);
+  transition: transform 0.2s ease;
+}
+
+.dropdownTitleContainer {
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.dropdownText {
+  font: var(--tp-3r);
+  color: var(--grey-900);
+}
+
+.dropdownMenuContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+
+  display: none;
+  width: 100%;
+  background-color: var(--white);
+  border: 0.1rem solid var(--grey-200);
+  border-radius: 0.8rem;
+  box-shadow: 0 1.6rem 2.4rem rgba(0, 0, 0, 0.1);
+}
+
+.dropdownItemContainer {
+  padding: 1.6rem;
+  cursor: pointer;
+  border-bottom: 0.1rem solid var(--grey-200);
+  transition: color 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.dropdownItemContainer:last-child {
+  border-bottom: none;
+}
+
+.dropdownItemContainer:hover .dropdownText,
+.dropdownItemContainer.selected .dropdownText {
+  color: var(--purple-600);
+}
+
+.inputContainer {
+  padding: 1.6rem;
+  background-color: var(--white);
+  border: 0.1rem solid var(--grey-200);
+  border-radius: 0.8rem;
+  transition: all 0.2s ease;
+
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.inputField {
+  flex: 1;
+  font: var(--tp-3r);
+  color: var(--grey-900);
+  border: none;
+  outline: none;
+  background: transparent;
+  min-width: 0;
+}
+
+.errorText {
+  font: var(--tp-4);
+  color: var(--red-500);
+  display: none;
+  margin-left: auto;
+  white-space: nowrap;
+}
+
+@media (max-width: 24em) {
+  .linkCardContainer {
+    padding: 1.6rem;
+  }
+
+  .inputGroupContainer.hasError {
+    position: relative;
+    padding-bottom: 2.1rem;
+  }
+
+  .inputGroupContainer.hasError .errorText {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+  }
+}

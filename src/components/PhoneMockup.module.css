@@ -1,0 +1,42 @@
+.mockupCardContainer {
+  flex: 0 0 56rem;
+  background-color: var(--white);
+  border-radius: 1.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2.4rem;
+}
+
+.mockupPhoneWrapper {
+  position: relative;
+}
+
+.mockupImg {
+  display: block;
+  width: 30.7rem;
+}
+
+.mockupScreenContent {
+  position: absolute;
+  top: 6.35rem;
+  left: 3.55rem;
+  width: calc(100% - 7.1rem);
+  height: calc(100% - 12.7rem);
+
+  display: flex;
+  flex-direction: column;
+  gap: 4.8rem;
+}
+
+.mockupLinksContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+@media (max-width: 48em) {
+  .mockupCardContainer {
+    display: none;
+  }
+}
